@@ -3,6 +3,7 @@ package fp.laboratorio.test;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -45,7 +46,11 @@ public class ExperimentoConjuntos {
 		
 		//Elimine al estudiante e2 del primer conjunto.
 		
+		Collection<? extends Estudiante> s1 = null;
 		//Calcula la unión, intersección y diferencia de los dos conjuntos y muestra los resultados.
+        Set<Estudiante> union = new HashSet<Estudiante>(s1);
+		Collection<? extends Estudiante> s2 = null;
+		union.addAll(s2);
 
 		
 	}
